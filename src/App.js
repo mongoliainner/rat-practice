@@ -4,7 +4,7 @@ import { Canvas } from "./components/0_wrappers/Canvas";
 
 function App() {
   return (
-    <FlexContainerColumn>
+    <FlexContainerColumn className="borborder-white">
       <Canvas></Canvas>
     </FlexContainerColumn>
   );

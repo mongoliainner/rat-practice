@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-export function Canvas({ children, padding = "1rem", gap = "0.5rem" }) {
+export function Canvas({ children, padding = "0rem", gap = "0.5rem" }) {
   const canvasRef = useRef(null);
 
   const drawOnCanvas = () => {
@@ -11,7 +11,7 @@ export function Canvas({ children, padding = "1rem", gap = "0.5rem" }) {
     canvas.height = canvas.parentElement.clientHeight;
 
     context.fillStyle = "blue";
-    context.fillRect(50, 50, 150, 100);
+    context.fillRect(0, 0, canvas.width, canvas.height);
 
     context.beginPath();
     context.arc(300, 300, 50, 0, Math.PI * 2);
