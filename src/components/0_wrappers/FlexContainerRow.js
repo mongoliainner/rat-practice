@@ -5,6 +5,7 @@ export function FlexContainerRow({
   padding = "1rem",
   gap = "0.5rem",
   backgroundColor = "#222",
+  alignItems = "center",
 }) {
   const containerStyle = {
     display: "flex",
@@ -13,6 +14,7 @@ export function FlexContainerRow({
     gap: gap,
     height: "100dvh",
     backgroundColor: backgroundColor,
+    alignItems: alignItems,
   };
 
   return (
