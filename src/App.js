@@ -7,7 +7,7 @@ function App() {
   return (
     <FlexContainerColumn>
       <Canvas></Canvas>
-      <TypographyH1>DISK</TypographyH1>
+      <TypographyH1>DISK TV</TypographyH1>
     </FlexContainerColumn>
   );
 }

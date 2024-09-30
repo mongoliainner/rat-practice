@@ -24,11 +24,25 @@ export function Canvas({ children, padding = "0rem", gap = "0.5rem" }) {
     padding: padding,
     gap: gap,
     height: "100vh",
+    width: "100%",
+  };
+
+  const canvasWrapperStyle = {
+    height: "100%",
+    width: "100%",
+    borderRadius: "1rem",
+    overflow: "hidden",
+    borderWidth: "0.05rem",
+    borderColor: "#FFF",
+    boxShadow:
+      "0px 0px 0.5px 2px rgba(255, 255, 255, 0.25), 0px 0px 4px 8px rgba(255, 255, 255, 0.05)",
   };
 
   return (
     <div style={containerStyle}>
-      <canvas ref={canvasRef}></canvas>
+      <div style={canvasWrapperStyle}>
+        <canvas ref={canvasRef}></canvas>
+      </div>
       {children}
     </div>
   );
