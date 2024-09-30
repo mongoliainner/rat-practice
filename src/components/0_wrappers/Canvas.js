@@ -12,11 +12,6 @@ export function Canvas({ children, padding = "0rem", gap = "0.5rem" }) {
 
     context.fillStyle = "blue";
     context.fillRect(0, 0, canvas.width, canvas.height);
-
-    context.beginPath();
-    context.arc(300, 300, 50, 0, Math.PI * 2);
-    context.fillStyle = "green";
-    context.fill();
   };
 
   useEffect(() => {
